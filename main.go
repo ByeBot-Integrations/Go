@@ -12,7 +12,7 @@ import (
 
 // Configuration - update these values for your setup
 const (
-	baseURL = "https://challenge.captchacat.com"
+	baseURL = "https://challenge.byebot.de"
 	apiKey  = "" // Your API key here
 	siteKey = "bd1cc81b04564d3f899e" // Just an example sitekey so the widget shows up
 	port    = "4343"
@@ -73,7 +73,7 @@ func handleSubmit(w http.ResponseWriter, r *http.Request) {
 	}
 
 	username := r.FormValue("username")
-	token := r.FormValue("captchacat-token")
+	token := r.FormValue("byebot-token")
 
 	if token == "" {
 		renderResult(w, ResultData{
